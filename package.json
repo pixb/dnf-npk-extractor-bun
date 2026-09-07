@@ -10,6 +10,7 @@
     "dev": "bun run index.ts",
     "test": "bun test",
     "fmt": "biome check --write .",
+    "typecheck": "tsc --noEmit",
     "build": "bun build --compile index.ts --outfile dist/dnf-extractor"
   },
   "devDependencies": {
