@@ -174,11 +174,12 @@ describe("PNG 导出", () => {
 		expect(png?.length).toBeGreaterThan(0);
 
 		// 检查 PNG 签名
-		const signature = png!.subarray(0, 8);
-		expect(signature[0]).toBe(137); // 0x89
-		expect(signature[1]).toBe(80); // P
-		expect(signature[2]).toBe(78); // N
-		expect(signature[3]).toBe(71); // G
+		expect(png).toBeDefined();
+		const signature = png?.subarray(0, 8);
+		expect(signature?.[0]).toBe(137); // 0x89
+		expect(signature?.[1]).toBe(80); // P
+		expect(signature?.[2]).toBe(78); // N
+		expect(signature?.[3]).toBe(71); // G
 	});
 });
 
