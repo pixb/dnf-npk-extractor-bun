@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Output
+output/
+dist/
+*.output
+
+# Test artifacts
+test.act
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Build
+*.tsbuildinfo

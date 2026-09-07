@@ -1,0 +1,30 @@
+{
+  "name": "dnf-npk-extractor-bun",
+  "version": "0.1.0",
+  "description": "DNF (Dungeon & Fighters) 资源包解析器，支持台服/国际服和 86jp (次元彼端) 私服版本",
+  "type": "module",
+  "bin": {
+    "dnf-extractor": "./bin/cli"
+  },
+  "scripts": {
+    "dev": "bun run index.ts",
+    "test": "bun test",
+    "fmt": "biome check --write .",
+    "build": "bun build --compile index.ts --outfile dist/dnf-extractor"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "latest",
+    "@types/bun": "latest"
+  },
+  "keywords": [
+    "dnf",
+    "dfo",
+    "npk",
+    "pvf",
+    "extractor",
+    "dungeon-fighters",
+    "86jp",
+    "s4a21"
+  ],
+  "license": "MIT"
+}
